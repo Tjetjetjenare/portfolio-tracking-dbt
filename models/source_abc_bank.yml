@@ -20,7 +20,7 @@ sources:
           - name: SYMBOL
             description: The symbol of the security at ABC Bank.
             tests:
-              - unique:
+              - unique
               - not_null
           - name: DESCRIPTION
             description: The name of the security at ABC Bank.
