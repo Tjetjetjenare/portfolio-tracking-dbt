@@ -12,3 +12,7 @@ validation_errors as (
 )
 SELECT * FROM validation_errors
 {%- endtest %}
+
+{% macro as_sql_list(hashed_fields_list ) -%}
+{{ hashed_fields_list|join(', ') }}
+{%- endmacro %}
